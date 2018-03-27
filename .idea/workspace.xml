@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1f482a24-acb8-48a2-9ae5-3672261698e2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ja0ck5/leetcode/TwoSum.java" afterPath="$PROJECT_DIR$/src/main/java/com/ja0ck5/leetcode/TwoSum.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -288,12 +287,20 @@
       <option name="presentableId" value="Default" />
       <updated>1522079750482</updated>
       <workItem from="1522079763922" duration="1003000" />
-      <workItem from="1522108816470" duration="1370000" />
+      <workItem from="1522108816470" duration="1410000" />
     </task>
+    <task id="LOCAL-00001" summary="twoSum">
+      <created>1522110236339</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1522110236339</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2373000" />
+    <option name="totallyTimeSpent" value="2413000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -332,6 +339,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="twoSum" />
+    <option name="LAST_COMMIT_MESSAGE" value="twoSum" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
