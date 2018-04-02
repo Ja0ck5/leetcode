@@ -40,8 +40,8 @@ public class MedianOfTwoSortedArrays {
         int cutR = nums1.length;
         int len = nums1.length + nums2.length;
         while (cut1 <= nums1.length) {
-            cut1 = (cutR - cutL) >> 1 + cutL;
-            cut2 = len >> 1 - cut1;
+            cut1 = ((cutR - cutL) >> 1) + cutL;
+            cut2 = (len >> 1) - cut1;
 
             double L1 = (0 == cut1) ? Integer.MIN_VALUE : nums1[cut1 - 1];
             double L2 = (0 == cut2) ? Integer.MIN_VALUE : nums2[cut2 - 1];
@@ -66,4 +66,5 @@ public class MedianOfTwoSortedArrays {
         }
         return -1;
     }
+
 }
