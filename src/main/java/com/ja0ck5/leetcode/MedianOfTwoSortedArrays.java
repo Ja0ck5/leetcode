@@ -31,15 +31,17 @@ package com.ja0ck5.leetcode;
 public class MedianOfTwoSortedArrays {
 
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        if (nums1.length > nums2.length) {
-            return findMedianSortedArrays(nums1, nums2);
+        int n1 = nums1.length;
+        int n2 = nums2.length;
+        if (n1 > n2) {
+            return findMedianSortedArrays(nums2, nums1);
         }
+        int len = n1 + n2;
         int cut1 = 0;
         int cut2 = 0;
         int cutL = 0;
-        int cutR = nums1.length;
-        int len = nums1.length + nums2.length;
-        while (cut1 <= nums1.length) {
+        int cutR = n1;
+        while (cut1 <= n1) {
             cut1 = ((cutR - cutL) >> 1) + cutL;
             cut2 = (len >> 1) - cut1;
 
@@ -54,11 +56,11 @@ public class MedianOfTwoSortedArrays {
                 cutL = cut1 + 1;
             } else {
                 if (len % 2 == 0) {
-                    L1 = L1 > L2 ? L1 : L2;
-                    R1 = R1 < R2 ? R1 : R2;
+                    L1 = (L1 > L2 ? L1 : L2);
+                    R1 = (R1 < R2 ? R1 : R2);
                     return (L1 + R1) / 2;
                 } else {
-                    R1 = R1 < R2 ? R1 : R2;
+                    R1 = (R1 < R2 ? R1 : R2);
                     return R1;
                 }
             }
@@ -66,5 +68,4 @@ public class MedianOfTwoSortedArrays {
         }
         return -1;
     }
-
 }
