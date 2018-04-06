@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f482a24-acb8-48a2-9ae5-3672261698e2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ja0ck5/leetcode/StringToIntegerAtoi.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ja0ck5/leetcode/MedianOfTwoSortedArrays.java" afterPath="$PROJECT_DIR$/src/main/java/com/ja0ck5/leetcode/MedianOfTwoSortedArrays.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,11 +38,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MedianOfTwoSortedArrays.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MedianOfTwoSortedArrays.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ja0ck5/leetcode/MedianOfTwoSortedArrays.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="21">
-              <caret line="30" column="36" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="36" />
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LongestPalindromicSubstring.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ja0ck5/leetcode/LongestPalindromicSubstring.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="23" column="40" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ZigZagConversion.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ja0ck5/leetcode/ZigZagConversion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReverseInteger.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ja0ck5/leetcode/ReverseInteger.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringToIntegerAtoi.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ja0ck5/leetcode/StringToIntegerAtoi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="27" column="32" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -73,6 +113,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ja0ck5/leetcode/TwoSum.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ja0ck5/leetcode/LongestSubStringWithoutRepeatingCharacters.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ja0ck5/leetcode/MedianOfTwoSortedArrays.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ja0ck5/leetcode/LongestPalindromicSubstring.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ja0ck5/leetcode/ZigZagConversion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ja0ck5/leetcode/ReverseInteger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ja0ck5/leetcode/StringToIntegerAtoi.java" />
       </list>
     </option>
   </component>
@@ -115,7 +159,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -153,9 +199,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -176,7 +220,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MedianOfTwoSortedArrays">
+  <component name="RunManager" selected="Application.StringToIntegerAtoi">
     <configuration name="MedianOfTwoSortedArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -185,6 +229,25 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.ja0ck5.leetcode.MedianOfTwoSortedArrays" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="leetcode" />
+      <envs />
+    </configuration>
+    <configuration name="StringToIntegerAtoi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ja0ck5.leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.ja0ck5.leetcode.StringToIntegerAtoi" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -296,14 +359,16 @@
       <properties />
       <listeners />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.TwoSum" />
       <item index="1" class="java.lang.String" itemvalue="Application.MedianOfTwoSortedArrays" />
+      <item index="2" class="java.lang.String" itemvalue="Application.StringToIntegerAtoi" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.MedianOfTwoSortedArrays" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TwoSum" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Application.StringToIntegerAtoi" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MedianOfTwoSortedArrays" />
+        <item index="2" class="java.lang.String" itemvalue="Application.TwoSum" />
       </list>
     </recent_temporary>
   </component>
@@ -329,7 +394,9 @@
       <workItem from="1522283276784" duration="72000" />
       <workItem from="1522593592527" duration="648000" />
       <workItem from="1522682447369" duration="3493000" />
-      <workItem from="1522710756173" duration="2424000" />
+      <workItem from="1522710756173" duration="2477000" />
+      <workItem from="1522766423605" duration="587000" />
+      <workItem from="1523005395526" duration="9315000" />
     </task>
     <task id="LOCAL-00001" summary="twoSum">
       <created>1522110236339</created>
@@ -366,11 +433,39 @@
       <option name="project" value="LOCAL" />
       <updated>1522711810947</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="MedianOfTwoSortedArrays">
+      <created>1522714186861</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1522714186861</updated>
+    </task>
+    <task id="LOCAL-00007" summary="LongestPalindromicSubstring">
+      <created>1523014016689</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1523014016689</updated>
+    </task>
+    <task id="LOCAL-00008" summary="ZigZagConversion">
+      <created>1523019819298</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1523019819298</updated>
+    </task>
+    <task id="LOCAL-00009" summary="ReverseInteger">
+      <created>1523020379607</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1523020379607</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13959000" />
+    <option name="totallyTimeSpent" value="23914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -413,15 +508,70 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="twoSum" />
     <MESSAGE value="LongestSubStringWithoutRepeatingCharacters" />
-    <MESSAGE value="MedianOfTwoSortedArrays" />
     <MESSAGE value="findMedianSortedArrays" />
-    <option name="LAST_COMMIT_MESSAGE" value="findMedianSortedArrays" />
+    <MESSAGE value="MedianOfTwoSortedArrays" />
+    <MESSAGE value="LongestPalindromicSubstring" />
+    <MESSAGE value="ZigZagConversion" />
+    <MESSAGE value="ReverseInteger" />
+    <option name="LAST_COMMIT_MESSAGE" value="ReverseInteger" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ja0ck5/leetcode/LongestSubStringWithoutRepeatingCharacters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="57" lean-forward="false" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ja0ck5/leetcode/MedianOfTwoSortedArrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="30" column="36" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ja0ck5/leetcode/LongestSubStringWithoutRepeatingCharacters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="57" lean-forward="false" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ja0ck5/leetcode/MedianOfTwoSortedArrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="30" column="36" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -602,7 +752,39 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ja0ck5/leetcode/MedianOfTwoSortedArrays.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
-          <caret line="30" column="36" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="36" />
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ja0ck5/leetcode/LongestPalindromicSubstring.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="23" column="40" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ja0ck5/leetcode/ZigZagConversion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ja0ck5/leetcode/ReverseInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ja0ck5/leetcode/StringToIntegerAtoi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="27" column="32" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="32" />
           <folding />
         </state>
       </provider>
