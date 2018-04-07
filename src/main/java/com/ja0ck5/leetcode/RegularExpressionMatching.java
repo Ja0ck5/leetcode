@@ -41,7 +41,7 @@ public class RegularExpressionMatching {
         dp[0][0] = true;
         // Preprocessing
         for (int i = 0; i < p.length(); i++) {
-            if (p.charAt(i) == '*' && dp[0][i - 1]) {// s="baab",p="bc*aab" c* --> empty
+            if (i > 0 && p.charAt(i) == '*' && dp[0][i - 1]) {// s="baab",p="bc*aab" c* --> empty
                 dp[0][i + 1] = true;
             }
         }
@@ -50,7 +50,7 @@ public class RegularExpressionMatching {
                 if (p.charAt(j) == s.charAt(i) || p.charAt(j) == '.') {
                     dp[i + 1][j + 1] = dp[i][j];
                 }
-                if (p.charAt(j) == '*') {
+                if (j > 0 && p.charAt(j) == '*') {
                     if (p.charAt(j - 1) != s.charAt(i) && p.charAt(j - 1) != '.') {
                         dp[i + 1][j + 1] = dp[i + 1][j - 1];
                     } else {
