@@ -48,7 +48,7 @@ public class RegularExpressionMatching {
         for (int i = 0; i < s.length(); i++) {
             for (int j = 0; j < p.length(); j++) {
                 if (p.charAt(j) == s.charAt(i) || p.charAt(j) == '.') {
-                    dp[i + 1][j + 1] = dp[i][j];
+                    dp[i + 1][j + 1] = dp[i][j];// 因为 matrix 是从行列都比 p s 的 长度大 1
                 }
                 if (j > 0 && p.charAt(j) == '*') {
                     if (p.charAt(j - 1) != s.charAt(i) && p.charAt(j - 1) != '.') {
