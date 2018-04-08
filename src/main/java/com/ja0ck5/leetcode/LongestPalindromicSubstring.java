@@ -67,4 +67,35 @@ public class LongestPalindromicSubstring {
             res = cur;
         }
     }
+
+
+    int max = 0, lo = 0;
+
+    void calPalindrome(String s , int l, int h)
+    {
+        while(l>=0 && h< s.length() && s.charAt(l) == s.charAt(h))
+        {
+            l--;
+            h++;
+        }
+        if(h-l-1>=max)
+        {
+            max = h-l-1;
+            lo = l+1;
+        }
+    }
+
+    public String longestPalindrome3(String s) {
+
+        if(s.length() < 2 )return s;
+
+        for(int i =0;i<s.length();i++)
+        {
+            calPalindrome(s,i,i);
+            calPalindrome(s,i,i+1);
+        }
+
+        return s.substring(lo,lo+max);
+
+    }
 }
