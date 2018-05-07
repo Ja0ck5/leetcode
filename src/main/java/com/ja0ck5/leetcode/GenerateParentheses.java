@@ -38,10 +38,10 @@ public class GenerateParentheses {
 			return;
 		}
 		if (l > 0) {
-			helper(res, "(", l - 1, r);
+			helper(res, s + "(", l - 1, r);
 		}
 		if (r > 0) {
-			helper(res, "）", l, r - 1);
+			helper(res, s + ")", l, r - 1);
 		}
 	}
 
