@@ -31,7 +31,7 @@ public class DivideTwoIntegers {
 		if (ldividend < ldivisor || ldividend == 0)
 			return 0;
 		long lres = divide(ldividend, ldivisor);
-		int res = 0;
+		int res;
 		if (lres > Integer.MAX_VALUE) {
 			res = (sign == 1) ? Integer.MAX_VALUE : Integer.MIN_VALUE;
 		} else
