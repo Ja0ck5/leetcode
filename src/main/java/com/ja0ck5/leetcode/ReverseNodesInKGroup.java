@@ -31,13 +31,13 @@ public class ReverseNodesInKGroup {
             cur = cur.next;
             count++;
         }
-        if(count == k){
-            cur = reverseKGroup(cur,k);
+        if(count == k){// if k+1 node is found
+            cur = reverseKGroup(cur,k);// reverse list with k+1 node as head
             while(count-- > 0){
-                ListNode temp = head.next;
-                head.next = cur;
-                cur = head;
-                head = temp;
+                ListNode temp = head.next;// tmp - next head in direct part
+                head.next = cur;// preappending "direct" head to the reversed list
+                cur = head;// move head of reversed part to a new node
+                head = temp;// move "direct" head to the next node in direct part
             }
             head = cur;
         }
