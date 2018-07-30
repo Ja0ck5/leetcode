@@ -149,7 +149,7 @@ public class BitOperation {
 		for (int n : nums) {
 			i ^= n;
 		}
-		// 与本身补码相与
+		// 与本身补码相与.设置 rightOne 第 k 位 为 1，其余位为 0
 		int rightOne = i & (~i + 1);
 		for (int n : nums) {
 			// 相与等于 0 则代表了这个数肯定是两个数中第 k 位不为 1 的那个
