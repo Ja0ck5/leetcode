@@ -90,6 +90,24 @@ public class ValidSudoku {
 		return true;
 	}
 
+	public static boolean isValidSudoku2(char[][] board) {
+		int[][] signs = new int[3][9];
+		for (int i = 0; i < 9; i++) {
+			for (int j = 0; j < 9; j++) {
+				if (board[i][j] == '.')
+					continue;
+				int n = 1 << (board[i][j] - '1');
+				int cubeIndex = i / 3 * 3 + j / 3;
+				if ((signs[0][i] & n) != 0 || (signs[1][j] & n) != 0 || (signs[2][cubeIndex] & n) != 0)
+					return false;
+				signs[0][i] |= n;
+				signs[1][j] |= n;
+				signs[2][cubeIndex] |= n;
+			}
+		}
+		return true;
+	}
+
 	public static void main(String[] args) {
 		char[][] board = { { '5', '3', '.', '.', '7', '.', '.', '.', '.' },
 				{ '6', '.', '.', '1', '9', '5', '.', '.', '.' }, { '.', '9', '8', '.', '.', '.', '.', '6', '.' },
@@ -97,9 +115,7 @@ public class ValidSudoku {
 				{ '7', '.', '.', '.', '2', '.', '.', '.', '6' }, { '.', '6', '.', '.', '.', '.', '2', '8', '.' },
 				{ '.', '.', '.', '4', '1', '9', '.', '.', '5' }, { '.', '.', '.', '.', '8', '.', '.', '7', '9' } };
 
-	    isValidSudoku(board);
+		isValidSudoku2(board);
 	}
-
-
 
 }
