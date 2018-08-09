@@ -31,7 +31,7 @@ public class PlusOne {
 				++digits[i];
 				return digits;
 			}
-			digits[i] = 0;
+			digits[i] = 0; 
 		}
 		int[] res = new int[n + 1];
 		res[0] = 1;
