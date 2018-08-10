@@ -35,4 +35,29 @@ public class MatrixUDG {
     public void setmMatrix(int[][] mMatrix) {
         this.mMatrix = mMatrix;
     }
+
+    /**
+     * prim最小生成树
+     *
+     * @param start 从图中的第start个元素开始，生成最小树
+     */
+    public void prim(int start) {
+        // 顶点个数
+        int num = mVexs.length;
+        // 最小生成树的索引,即 prims 数组的索引
+        int index = 0;
+        /**
+         * U 存放图的最小生成树的顶点
+         */
+        char[] uPrims = new char[num];
+
+        /**
+         * 顶点之间的边的权值
+         */
+        int[] weights = new int[num];
+
+
+
+
+    }
 }
