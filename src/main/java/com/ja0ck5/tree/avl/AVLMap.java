@@ -218,4 +218,35 @@ public class AVLMap<K, V> implements Iterable<AVLEntry<K, V>> {
 		}
 	}
 
+	/**
+	 * 寻找后继节点
+	 * 
+	 * @param t
+	 * @return
+	 */
+	public AVLEntry<K, V> successor(AVLEntry<K, V> t) {
+		if (t == null)
+			return null;
+
+		// case 1: 有右子树的情况 和 getFirstEntry 完全一致
+		if (t.right != null) {
+			AVLEntry<K, V> p = t.right;
+			// 找到右子树最小节点，即 右子树最左边的节点
+			while (p.left != null) {
+				p = p.left;
+			}
+			return p;
+		} else {
+			// case 2: 没有用右子树，向上回溯，找到第一个孩子是左子树,后继节点为该孩子的父亲
+			AVLEntry<K, V> p = t.parent;
+			AVLEntry<K, V> ch = t;
+			// 找到第一个 孩子是最孩子的父亲节点，或者根节点
+			while (p != null && ch == p.right) {
+				ch = p;
+				p = p.parent;
+			}
+			return p;
+		}
+	}
+
 }
