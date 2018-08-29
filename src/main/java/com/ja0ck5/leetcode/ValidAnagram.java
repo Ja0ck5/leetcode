@@ -22,44 +22,22 @@ import java.util.Map;
 public class ValidAnagram {
 
 	public boolean isAnagram(String s, String t) {
-		if (s == null || t == null || s.length() == 0 || t.length() == 0)
-			return true;
-		if (s.length() != t.length())
-			return false;
+		if(s == null || t == null || s.length() ==0 || t.length() == 0 ) return true;
+		if(s.length() != t.length()) return false;
+		int[] a = new int[26];
+		int[] b = new int[26];
 		char[] schars = s.toCharArray();
-		Map<Character, Integer> smap = new HashMap<>();
+		char[] tchars = t.toCharArray();
 
-        char[] tchars = t.toCharArray();
-        Map<Character, Integer> tmap = new HashMap<>();
-
-		for (int i = 0; i < schars.length; i++) {
-			Integer sc = smap.get(schars[i]);
-            sc = sc == null ? 1 : ++sc;
-			smap.put(schars[i], sc);
-
-            Integer tc = tmap.get(tchars[i]);
-            tc = tc == null ? 1 : ++tc;
-            tmap.put(tchars[i], tc);
+		for(int i=0;i<schars.length;i++){
+			a[schars[i] - 97]++;
+			b[tchars[i] - 97]++;
+		}
+		for(int i=0;i<a.length;i++){
+			if(a[i] != b[i]) return false;
 		}
 
-		boolean flag = true;
-		for (int i = 0; i < schars.length; i++) {
-			Integer sc = smap.get(schars[i]);
-			if (sc == null) {
-				flag = false;
-				break;
-			}
-			Integer tc = tmap.get(schars[i]);
-			if (tc == null) {
-				flag = false;
-				break;
-			}
-			if (sc.intValue() != tc.intValue()) {
-				flag = false;
-				break;
-			}
-		}
-		return flag;
+		return true;
 	}
 
     public static void main(String[] args) {
