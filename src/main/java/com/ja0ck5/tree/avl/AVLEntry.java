@@ -15,6 +15,7 @@ public class AVLEntry<K, V> implements Map.Entry<K, V> {
 	public AVLEntry<K, V> parent;
 	public AVLEntry<K, V> left;
 	public AVLEntry<K, V> right;
+	public int height;
 
 	public AVLEntry(K key) {
 		this.key = key;
