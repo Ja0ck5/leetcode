@@ -1,16 +1,16 @@
 package com.ja0ck5.tree.avl;
 
+import com.ja0ck5.TreeNode;
+
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * 1. 弹栈的时候，一旦发现某个节点的高度未发生改变，则立即停止回溯
- * 2. 指针回溯次数，最坏O(logN),最好 O(1),平均O(logN)
- * 3. 旋转次数，无需旋转、单旋转、双旋转，不会超过两次，O(1)
- * 4. 时间复杂度: BST 的插入 logN + 指针回溯 logN + 旋转 O(1) = O(logN)
- * 5. 空间复杂度，加上 parent 属性为 O(1),无则 O(logN) 需要额外的栈进行回溯
+ * 1. 弹栈的时候，一旦发现某个节点的高度未发生改变，则立即停止回溯 2. 指针回溯次数，最坏O(logN),最好 O(1),平均O(logN) 3.
+ * 旋转次数，无需旋转、单旋转、双旋转，不会超过两次，O(1) 4. 时间复杂度: BST 的插入 logN + 指针回溯 logN + 旋转 O(1) =
+ * O(logN) 5. 空间复杂度，加上 parent 属性为 O(1),无则 O(logN) 需要额外的栈进行回溯
  *
  * @program: leetcode
  * @description:
@@ -197,7 +197,7 @@ public class AVLMap<K, V> implements Iterable<AVLEntry<K, V>> {
 		while (!stack.isEmpty()) {
 			p = stack.pop();
 			int newHeight = Math.max(getHeight(p.left), getHeight(p.right)) + 1;
-			if(p.height > 1 && newHeight == p.height){
+			if (p.height > 1 && newHeight == p.height) {
 				stack.clear();
 				return;
 			}
@@ -356,5 +356,32 @@ public class AVLMap<K, V> implements Iterable<AVLEntry<K, V>> {
 
 	public int getHeight(AVLEntry<K, V> p) {
 		return p == null ? 0 : p.height;
+	}
+
+	public TreeNode sortedArrayToBST(int[] nums) {
+		if (nums == null || nums.length == 0) {
+			return null;
+		}
+		return buildFromSorted(0, nums.length - 1, nums);
+	}
+
+	public TreeNode buildFromSorted(int lo, int hi, int[] nums) {
+		if (hi < lo) {
+			return null;
+		}
+		int mid = (lo + hi) >>> 1;
+		TreeNode left = null;
+		if (lo < mid) {
+			left = buildFromSorted(lo, mid - 1, nums);
+		}
+		TreeNode middle = new TreeNode(nums[mid]);
+		if (left != null) {
+			middle.left = left;
+		}
+		if (mid < hi) {
+			TreeNode right = buildFromSorted(mid + 1, hi, nums);
+			middle.right = right;
+		}
+		return middle;
 	}
 }
