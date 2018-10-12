@@ -15,7 +15,7 @@ package com.ja0ck5.leetcode;
  */
 public class RemoveNthNodeFromEndofList {
 
-	public ListNode removeNthFromEnd(ListNode head, int n) {
+	public static ListNode removeNthFromEnd(ListNode head, int n) {
 		ListNode dummy = new ListNode(0);
 		ListNode slow = dummy;
 		ListNode fast = dummy;
@@ -29,6 +29,18 @@ public class RemoveNthNodeFromEndofList {
 		}
 		slow.next = slow.next.next;
 		return dummy.next;
+	}
+
+	public static void main(String[] args) {
+		ListNode node = new ListNode(1);
+		node.next = new ListNode(2);
+		node.next.next = new ListNode(3);
+		node.next.next.next = new ListNode(4);
+		node.next.next.next.next = new ListNode(5);
+
+		ListNode res = removeNthFromEnd(node, 2);
+		System.out.println(res);
+
 	}
 
 }
