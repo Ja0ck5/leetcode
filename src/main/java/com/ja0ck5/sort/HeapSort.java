@@ -12,7 +12,7 @@ public class HeapSort {
 	        return;
         }
 		// 构建大堆
-		buildMaxHeap(nums);
+		heapify(nums);
 		// 现在已经有了 最大元素排到了 下标为 0 的位置
         for (int i = nums.length - 1; i >= 1 ; i--) {
             int tmp = nums[0];
@@ -28,7 +28,8 @@ public class HeapSort {
 	 * 
 	 * @param nums
 	 */
-	private void buildMaxHeap(int[] nums) {
+	private void heapify(int[] nums) {
+	    // (nums.length - 1) >> 1 查找第一个 非叶子节点
 		for (int i = ((nums.length - 1) >> 1); i >= 0; i--) {
 			// 构造大堆需要的数组，要构造的元素的数量，要构造的元素从哪个节点开始
 			adjustHeap(nums, nums.length, i);
