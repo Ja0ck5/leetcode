@@ -31,7 +31,7 @@ public class MergeTwoSortedLists {
 		return dummy.next;
 	}
 
-	public ListNode mergeTwoLists2(ListNode l1, ListNode l2) {
+	public static ListNode mergeTwoLists2(ListNode l1, ListNode l2) {
 	    if(l1 == null) return l2;
 	    if(l2 == null) return l1;
 	    if(l1.val< l2.val){
@@ -42,5 +42,19 @@ public class MergeTwoSortedLists {
             return l2;
         }
 	}
+
+	public static void main(String[] args) {
+		ListNode l1 = new ListNode(1);
+		l1.next = new ListNode(2);
+		l1.next.next = new ListNode(4);
+
+		ListNode l2 = new ListNode(1);
+		l2.next = new ListNode(3);
+		l2.next.next = new ListNode(4);
+		ListNode listNode = mergeTwoLists2(l1, l2);
+		System.out.println(listNode);
+	}
+
+
 
 }
