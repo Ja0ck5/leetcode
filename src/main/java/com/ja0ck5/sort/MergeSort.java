@@ -3,6 +3,7 @@ package com.ja0ck5.sort;
 import java.util.Arrays;
 
 /**
+ * 冯诺依曼在1945年发明了归并排序.要知道第一台通用电子计算机1946年才造出来
  * Created by Jack on 2018/8/30.
  */
 public class MergeSort {
