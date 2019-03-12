@@ -38,7 +38,7 @@ public class CoinChange {
 		f[0] = 0;
 		for (int i = 0; i <= M; i++) {
 			f[i] = Integer.MAX_VALUE;
-			for (int j = 0; j < n; j++) {
+			for (int j = 1; j < n; j++) {
 				if (i >= A[j] && f[i - A[j]] != Integer.MAX_VALUE)
 					f[i] = Math.min(f[i], f[i - A[j]] + 1);
 			}

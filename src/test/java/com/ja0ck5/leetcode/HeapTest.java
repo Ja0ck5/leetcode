@@ -1,6 +1,7 @@
 package com.ja0ck5.leetcode;
 
-import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
 
 import java.util.HashSet;
 import java.util.PriorityQueue;
