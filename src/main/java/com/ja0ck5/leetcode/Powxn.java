@@ -30,9 +30,11 @@ package com.ja0ck5.leetcode;
 public class Powxn {
 
 	/**
-	 * 2^2 = 2^1 * 2^1 = (2^0 * 2^0 * 2) * (2^0 * 2^0 * 2) = (1 * 1 * 2) * (1 * 1 * 2) = 4
-     *
-     * 2^3 = 2^1 * 2^1 * 2= (2^0 * 2^0 * 2) * (2^0 * 2^0 * 2) * 2 = (1 * 1 * 2) * (1 * 1 * 2) * 2 = 8
+	 * 2^2 = 2^1 * 2^1 = (2^0 * 2^0 * 2) * (2^0 * 2^0 * 2) = (1 * 1 * 2) * (1 * 1 *
+	 * 2) = 4
+	 *
+	 * 2^3 = 2^1 * 2^1 * 2= (2^0 * 2^0 * 2) * (2^0 * 2^0 * 2) * 2 = (1 * 1 * 2) * (1
+	 * * 1 * 2) * 2 = 8
 	 * 
 	 * @param x
 	 * @param n
@@ -56,6 +58,24 @@ public class Powxn {
 		} else {
 			return y * y * x;
 		}
+	}
+
+	public double myPow2(double x, int n) {
+		if (n == 0)
+			return 1;
+		double res = 1;
+		long abs = Math.abs((long) n);
+		while (abs > 0) {
+			if (abs % 2 != 0) {
+				res *= x;
+			}
+			x *= x;
+			abs /= 2;
+		}
+		if (n < 0) {
+			return 1.0 / res;
+		}
+		return res;
 	}
 
 }
