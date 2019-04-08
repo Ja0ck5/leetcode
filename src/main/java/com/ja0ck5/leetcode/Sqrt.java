@@ -37,17 +37,17 @@ package com.ja0ck5.leetcode;
 public class Sqrt {
 
     public int mySqrt(int x) {
-        int lo = 0;
+        if(x <= 0) return 0;
+        int lo = 1;
         int hi = x;
-        int mid;
-        while (lo <= hi){
-            mid = (hi - lo)/2 + lo;
+        while(lo <= hi){
+            long mid = (hi - lo) / 2 + lo;
             if(mid * mid == x){
-                return mid;
+                return (int)mid;
             }else if(mid * mid < x){
-                lo = mid + 1;
+                lo =(int) mid + 1;
             }else{
-                hi = mid - 1;
+                hi = (int)mid - 1;
             }
         }
         if(hi * hi < x){
