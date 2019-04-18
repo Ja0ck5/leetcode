@@ -34,7 +34,7 @@ package com.ja0ck5.leetcode;
  */
 public class GuessNumberHigherorLower {
 
-    
+
 
     /* The guess API is defined in the parent class GuessGame.
    @param num, your guess
