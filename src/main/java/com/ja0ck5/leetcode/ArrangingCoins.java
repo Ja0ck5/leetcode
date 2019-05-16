@@ -41,7 +41,7 @@ package com.ja0ck5.leetcode;
  */
 public class ArrangingCoins {
     public int arrangeCoins(int n) {
-        if( n <= 1) return 1;
+        if( n <= 1) return 0;
         long lo = 1, hi = n,mid;
         while(lo < hi){
             mid = lo + (hi - lo) / 2;
